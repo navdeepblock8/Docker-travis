@@ -5,8 +5,8 @@ services:
 before_install:
     - docker build -t navdeepduvedi/docker-react -f Dockerfile.dev . 
 
-script:
-    - docker run -e CI=true navdeepduvedi/docker-react npm run test
+#script:
+#    - docker run -e CI=true navdeepduvedi/docker-react npm run test
 
 deploy:
     edge: true
